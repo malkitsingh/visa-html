@@ -1,0 +1,117 @@
+@media(max-width: 1024px){
+
+    .toggle-btn {display: block}
+    aside.open.sidebar {    left: 0;    z-index: 100;    transition:left 0.5s;}
+    .banner .right-nav-part {    margin-top: 100px;}
+    .main-section {    padding-left: 0;    width: 100%;}
+    aside.sidebar{left:-175px; transition:left 0.5s; z-index: 100; top:70px;}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .form-part .location-section {    float: left;    padding: 0 10px;    width: 36%;}
+    .header{height: auto;}
+    .cont-step > p {    background: #ffffff none repeat scroll 0 0;    float: left;    font-size: 14px;    font-weight: 300;    left: 0;    margin: 0;    padding: 5px 10px;    position: relative;    white-space: nowrap;    width: auto;    z-index: 10;}
+    .tab-part .owl-carousel .owl-item {    display: inline-block;    float: left;    width: 230px;}
+    header.sticky .logo-part {    margin: 5px 0 0;}
+    .tab-content {    float: left;    padding: 30px;    width: 100%;}
+    .vis-detail > p {    color: #999999;    font-size: 16px;    font-weight: 100;    padding: 0;    text-align: center;}
+    .banner .right-nav-part {    margin-top: 100px;}
+    .basic-block li label {    font-size: 18px;}
+    .footer-content {    float: left;    padding: 50px 20px 0;    width: 100%;}
+    .section-block {    padding: 60px 30px;}
+    .location-section {    float: left;    padding: 0 5px;    width: 39%;}
+    .main-section {    padding-left: 0;    width: 100%;}
+    .form-part .get-btn.btn {    float: left;    height: 48px;    margin-left: 10px;    margin-top: 30px;    width: 25%;}
+    .banner-part-content .form-part {    background-color: rgba(0, 0, 0, 0.5);    display: inline-block;    float: none;    margin-top: 30px;    padding: 45px 60px;    position: relative;    width: 95%;}
+
+}
+@media (max-width: 767px){
+
+    .structre li {    width: 100%;}
+    .structre > ul > li > span::after {    left: 50%;    position: absolute;    top: 0;    transform: translateX(-50%);    width: 85px;    z-index: 10;}
+    .owl-carousel.my-carousel {    display: block;}
+    .inner-structure{margin-top: 0px}
+    .structre > ul > li > span {    background: #ffffff none repeat scroll 0 0;    color: #1e99d2;    float: left;    font-size: 15px;    font-weight: 300;    line-height: 1.5;    margin-bottom: 50px;    margin-left: 0;    padding-top: 90px;    position: relative;    text-align: center;    width: 100%;    z-index: 100;}
+    .inner-structure > li{height: 150PX}
+    .struct4 {    text-align: center;}
+    .inner-structure li > span {    left: -10px;    margin-left: 30px;    padding: 0 10px;    position: absolute;    top: 50%;    transform: translate(0px , -50%);    width: 112px;    z-index: 10;}
+    .inner-structure li.inner-structure2 > span {    bottom: auto;    top: 50%;    right: 65px;    left:0;}
+    .inner-structure li.inner-structure2 > span::after {    left: auto;    right: -40px;}
+    .inner-structure li.inner-structure2 > span {    bottom: auto;    left: auto;    margin-left: 0;    margin-right: 30px;    right: -10px;    text-align: right;    top: 50%;}
+    .structre {    float: left;    padding: 30px 0 0;    position: relative;    width: 100%;}
+    .hows-work-content h2 {    float: left;    font-size: 24px;   }
+    .inner-structure::after {    background: #EBEBEB none repeat scroll 0 0;    content: "";    height: 1px;    left: 0;    position: absolute;    top: 0;    width: 100%;}
+    .inner-structure > li::after {    background: #ebebeb none repeat scroll 0 0;    content: "";    height: 100%;    left: 0;    position: absolute;    right: 0;    top: 0;    width: 1px;}
+    .structre > ul > li:last-child span {    margin-bottom: 0;    margin-left: 0;    margin-right: 0;    margin-top: 30px;    padding-bottom: 95px;    padding-top: 0;}
+    .structre > ul > li:last-child::before {    left: 50%;    margin-left: -0.5px;    top: 8px;    transform: translateX(-50%);}
+    .structre > ul > li:last-child span::after {    bottom: 0;    left: auto;    right: 0;    top: auto;}
+    .inner-structure li.inner-structure2::before {    bottom: auto;    left: auto;    margin-left: 0;    margin-right: 0;    right: -2.5px;    top: 10px;}
+    .inner-structure li::before {    color: #1e99d2;    content: "";    font-family: fontawesome;    left: 0;    margin-left: -1.5px;    position: absolute;    top: 20px;    transform: rotate(90deg) translateX(0%);    z-index: 10;}
+    .inner-structure > li.inner-structure2::after {    bottom: 0;    left: auto;    right: 0;    top: 0;}
+    .inner-structure::before {    background: #ebebeb none repeat scroll 0 0;    bottom: 0;    content: "";    height: 1px;    left: 0;    position: absolute;    right: 0;    top: auto;    width: 100%;}
+    .inner-structure {    background: #ffffff none repeat scroll 0 0;    display: inline-block;    float: none;    margin-top: 0px;    position: relative;    width: 75%;    z-index: 10;}
+    .banner-part-content {    float: none;    left: 0;    margin: 0 auto;    max-width: 1000px;    position: relative;    right: 0;    text-align: center;    top: auto;    transform: translateY(0%);    z-index: 10;}
+    .structre > ul > li::before {    color: #1e99d2;    content: "";    font-family: fontawesome;    left: 50%;    margin-left: -1.5px;    position: absolute;    top: 80%;    transform: rotate(90deg) translateX(-50%);    z-index: 10;}
+    .banner-part-content h4 {    font-size: 16px;}
+    .form-part .location-section + .location-section{float: right}
+    .form-part .location-section {    float: left;    margin-bottom: 10px;    padding: 0;    width: 48%;}
+    .banner-part-content .form-part {    background-color: rgba(0, 0, 0, 0.5);    display: inline-block;    float: none;    margin-top: 20px;    padding: 15px;    position: relative;    width: 95%;}
+    .banner-part-content h1 {    font-size: 24px;}
+    .structre > ul > li::after {        bottom: 0;    content: "";    left: 50%;    position: absolute;    right: 0;    top: 0;    transform: translateX(-50%);    width: 1px;    height: 100%;}
+    .structre > ul > li:last-child::before {    left: 50%;    transform: rotate(90deg) translateX(-50%);}
+    .structre > ul > li:last-child span {    margin-left: 0;    margin-right: 0 !important;}
+    .structre > ul > li:last-child span::after {    left: 50%;    right: auto;}
+    .form-part .get-btn.btn {    float: left;    height: 48px;    margin-left: 0;    margin-top: 0;    width: 100%;}
+    .inner-structure > li {    float: left;    text-align: left;    width: 50% !important;}
+    .form-part input.custom-input.location-detector {    border-radius: 3px;    box-sizing: border-box;    height: auto;    line-height: 36px;}
+    section.banner-part {    height: auto;    min-height: 100vh;    padding: 100px 0 60px;    position: relative;    width: 100%;}
+    .vis-detail > p , .fot-links a{    font-size: 13px;     padding: 0;}
+    .tab-content {    padding: 30px 0px 0;    width: 100%;}
+    .section-block {    padding: 30px 10px !important;    position: relative;    width: 100%;}
+    .cust-list > li , .custom-collapse .collapsible-header , .custom-collapse .collapsible-body p , .address-area p, .time-day , .pv-cont > p , .Security-Regulations ul li, .form-step li, .form-step ol.mylisting li, .form-step > h5 , .ask-question > p{    font-size: 13px;}
+    .blue-txt {    font-size: 15px;}
+    .specail-case > h3 , .pv-another-cont > h4 , .Priority-Visa-content-head h4 , .form-step > h4{font-size: 16px}
+    .Priority-Visa-content-block {    margin: 0 10px 30px;    max-width: 100%;    width: 300px;}
+    .vis-detail > h3{font-size: 24px}
+    .basic-block li label {    font-size: 18px;    font-weight: 100;}
+    .inner-tab-part .basic-block li:last-child{border-bottom: 0px}
+    .basic-block > ul {    height: auto;    margin: 0 auto;    max-width: 100%;    padding: 0;    width: auto;}
+   .inner-tab-part .basic-block li {    border-bottom: 1px solid #ebebeb;    border-right: 0 none;    display: block;    float: none;    height: 100%;    padding: 30px 20px;    text-align: center;    vertical-align: middle;    width: auto;}
+   .cont-step > label {   font-size: 13px;    font-weight: 300;    left: 50%;    position: absolute;    top: -25px;    transform: translateX(-50%);    white-space: nowrap;}
+   .process-steps-row {    max-width: 80%;}
+   .cont-step > p {      font-size: 12px;    left: 50%;    margin: 35px 0 0;    padding: 0;    position: absolute;    text-align: center;    transform: translateX(-50%);    white-space: normal;    width: 100px;    z-index: 10;}
+   .process-steps-part {    margin: 40px 0 70px;}
+   .Address h4{font-size: 20px;}
+   .footer-content {    float: left;    padding: 30px 0px 0;    width: 100%;}
+   .header{height: auto;}
+   .visa-option {    margin-bottom: 10px;    width: 100%;}
+   .visa-option > label{font-size: 13px !important; height: 50px !important}
+   .specail-case{padding-left:0px}
+   .get-assistance {    background: #1e99d2 url("../images/get-assitance.png") no-repeat scroll 22px center / 20px auto;    border-radius: 50px;    box-shadow: 13px 0 35px rgba(30, 153, 210, 0.28);    color: #ffffff;    transform: translateX(-50%); left:50%;  display: inline-block;    float: none;    font-size: 13px;    font-weight: 300;    line-height: 1;    margin: 9px auto;    padding: 15px 20px 15px 50px;    position: relative;    right: 0;    top: 0;}
+   .location-section {    float: left;    padding: 0 5px;    width: auto;}
+   .tabs.upper-tab {    background: #ffffff none repeat scroll 0 0;    border-bottom: 0 none;    border-bottom-left-radius: 4px;    border-bottom-right-radius: 4px;    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);    display: none;    float: left;    height: auto;    margin: 0 auto;    overflow: visible;    position: relative;    text-align: center;    white-space: normal;    width: 100%;}
+.cut-drop.open {    border-bottom-left-radius: 0;    border-bottom-right-radius: 0;}
+   .get-assistance  span{display: none}
+   .tabs.upper-tab .tab {    border-bottom: 1px dashed #ebebeb;    display: block;    float: left;    width: 100%;}
+   .tabs.upper-tab .indicator {    display: none;}
+   .upper-tab.tabs .tab a {    color: #333333;    float: left;    font-size: 14px;    width: 100%; opacity: 1; transition: all 0.5s ease 0s;}
+   .Visa-Types.section-block {    margin-top: -55px ;    padding-top: 0 !important;    position: relative;}
+   .tabs.upper-tab .tab.last {    border-bottom: 0 none;}
+   .upper-tab.tabs .tab a:hover {    background: #1e99d2 none repeat scroll 0 0;    color: #ffffff;    opacity: 1;    transition: all 0.5s ease 0s;}
+       .cut-drop { display: block; }
+   .vis-detail {    float: left;    padding: 60px 0 20px;    width: 100%;}
+   .section-block{display: none;}
+   .section-block.show  ,  .mob-section {    display: block;}
+ 
+}
+
+   @media (max-width: 480px){       
+        .form-part .location-section label{display: none} 
+        .form-part .location-section {    margin-bottom: 15px;    padding: 0;    width: 100%;}         
+        .structre li span {    font-size: 12px;}     
+        .home-footer p {    color: #999999;    float: left;    font-size: 12px;    margin: 0 0 10px;    text-align: center;    width:100%;    }   
+        .home-footer .socials-links{width:100% !important; text-align:center;}    
+        .home-footer .socials-links li {    display: inline-block;    float: none;    margin-right: 5px;}      
+        .Priority-Visa-content-block {    margin: 0 0px 30px; }    
+        }
