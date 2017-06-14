@@ -1,16 +1,24 @@
 
 body{float: left; width:100%;box-sizing:border-box;}
-section.content-part {    float: left;    position: relative;    width: 100%;}
+section.content-part {    float: left;    position: relative;    width: 100%;     background: #f7f8f8 none repeat scroll 0 0;}
 ul.sidebar-list {    float: left;    margin: 0;    padding: 0;    width: 100%;}
 aside.sidebar {    background: #299ed4 none repeat scroll 0 0;    bottom: 0;    float: left;    left: 0;    padding-top: 0;    position: fixed;    top: 90px;    width: 175px;    z-index: 1;    transition:top 0.5s;}
 ul.sidebar-list li {    float: left;    position: relative;    width: 100%;}
 .sidebar-list a {    border-bottom: 1px solid #37a3d2;    color: #ffffff;    float: left;    font-size: 15px;    line-height: 1;    padding: 20px;    width: 100%;     transition: all 0.5s ease 0s;    font-weight: 100}
-.banner::after {     bottom: 0;    box-shadow: 0 -50px 25px rgba(0, 0, 0, 0.7) inset;    content: "";    left: 0;    position: absolute;    right: 0;    top: 0;}
-.get-btn.btn {    background: #1e99d2 none repeat scroll 0 0;    border-radius: 4px;    box-shadow: none;    font-size: 18px;    height: 40px;    margin-left: 5px;    margin-top: 21px;    text-shadow: none;    text-transform: none;   }
+/*.banner::after {     bottom: 0;    box-shadow: 0 -50px 25px rgba(0, 0, 0, 0.7) inset;    content: "";    left: 0;    position: absolute;    right: 0;    top: 0;}*/
+.get-btn.btn {    background: #f04545 none repeat scroll 0 0;    border-radius: 4px;    box-shadow: none;    font-size: 18px;    margin-left: 5px;    margin-top: -3px;    min-height: 50px;    min-width: 100px;    text-shadow: none;}
 .banner {    background-image: url("../images/banner.jpg");    background-position: center center;    background-size: cover;    float: left;    height: 360px;    width: 100%;    position: relative;    padding: 10px 20px;}
-.main-section {    float: left;    padding-left: 175px;    width: 100%;}
-.location-detector-part {    float: left;    position: relative;    width: 100%;}
-.header {    background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;    float: left;    height: 90px;    padding: 14px 20px;    position: fixed;    width: 100%;    z-index: 100;    transition:0.5s;}
+.main-section {    float: left;    padding-left: 0px;    width: 100%;}
+.location-detector-part {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 4px;
+    float: left;
+    margin-top: -3px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+.header {    background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;    float: left;    height: 65px;    padding: 8px 20px;    position: fixed;    width: 100%;    z-index: 100;    transition:0.5s;}
 .logo-part {    float: left;    margin-top: 10px;    width: 150px;}
 span.glo-icons {    position: absolute;    right: 10px;    top: 10px;}
 .right-nav-part {    float: right;    width: auto;}
@@ -21,14 +29,23 @@ input.custom-input.location-detector {    background: #ffffff none repeat scroll
 .search-section input {    background: #ffffff none repeat scroll 0 0;    border: 1px solid #ffffff;    border-radius: 50px;    box-shadow: none;    box-sizing: border-box;    color: #666666;    float: left;    margin-bottom: 0;    max-width: 100%;    min-height: 46px;    padding: 12px 40px 12px 25px;    width: 100%;}
 .search-section input:focus {    border-color: #ffffff !important;    box-shadow: none !important;}
 button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(102, 102, 102, 0.4);    line-height: 1;    padding: 0;    position: absolute;    right: 15px;    top: 50%;    transform: translateY(-50%);}
-.location-section label {    color: #333;    float: left;    padding: 0;    width: 100%;     font-weight: 300;}
+.location-section label {
+    color: #999999;
+    float: left;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 3px;
+    padding: 0;
+    width: 100%;
+}
 .location-section {    float: left;    padding: 0 5px;    width: 305px;}
-.search-section {    float: left;    margin-right: 20px;    max-width: 100%;    position: relative;    width: 410px;}
+.s00earch-section {    float: left;    margin-right: 20px;    max-width: 100%;    position: relative;    width: 410px;}
 .sidebar-list a:hover, .sidebar-list li.active a {    background: #35a3d7 none repeat scroll 0 0;    transition: all 0.5s ease 0s;}
 .section-block {
     border-bottom: 1px solid #f6f6f6;
     float: left;
-    padding: 60px;
+    padding: 10px 30px;
     position: relative;
     width: 100%;
 }
@@ -39,11 +56,11 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
 }
 .row{margin-bottom: 0px }
 .section-block-heading h2 {
-    color: #333333;
+    color: #909090;
     float: left;
     font-weight: 300;
-    font-size: 30px;
-    margin: 0 0 15px;
+    font-size: 40px;
+    margin: 10px 0 15px;
     padding-top: 00px;
     position: relative;
     text-align: center;
@@ -122,7 +139,7 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
 }
 .process-steps-part {
     float: left;
-    margin: 40px 0 25px;
+    margin: 40px 0 70px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -143,9 +160,10 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     color: #f04545;
     font-size: 20px;
     font-weight: 300;
-    left: 0;
+    left: 50%;
     position: absolute;
     top: -40px;
+    transform: translateX(-50%);
     white-space: nowrap;
 }
 .process-steps .btn {
@@ -182,18 +200,18 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
 .section-block-body .pager a.active{color:#1e99d2 }
 
 .section-block-body .pager a{ font-weight: normal;color: #999; display: inline-block;}
-.section-block-body .pager {
+/*.section-block-body .pager {
     float: right;
     font-size: 13px;
     position: relative;
     text-align: right;
     width: 100%;
     font-weight: normal;
-}
+}*/
 .process-steps.compeletd .cont-step p {
-    color: #1e99d2;
+    color: #333333;
 }
-.process-steps.compeletd::after {
+/*.process-steps.compeletd::after {
     background: #1e99d2 none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -202,22 +220,23 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     position: absolute;
     right: 0;
     top: 0;
-}
+}*/
 .cont-step > p {
     background: #ffffff none repeat scroll 0 0;
     float: left;
+    font-size: 20px;
     font-weight: 300;
-    left: 0;
-    margin: 0;
+    left: 50%;
+    margin: 35px 0 0;
     padding: 0 15px;
-    position: relative;
-  font-size: 20px;
+    position: absolute;
+    transform: translateX(-50%);
     white-space: nowrap;
     width: auto;
     z-index: 10;
 }
 .process-steps.compeletd button.btn i {
-    color: #f04545;
+    color: #fff;
     line-height: 1;
 }
 .process-steps-row {
@@ -227,10 +246,15 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     display: inline-block;
     float: none;
     height: 2px;
-    max-width: 100%;
+    max-width: 85%;
     padding: 0;
     position: relative;
     width: 100%;
+}
+.process-steps.compeletd .btn{
+    background: #f04545 none repeat scroll 0 0;
+    border-color: #f04545;
+    color: #ffffff;
 }
 .Priority-Visa-content-head {
     background-color: #34a3d6;
@@ -266,7 +290,7 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
 }
 .Priority-Visa-content {
     float: left;
-    margin: 30px 0;
+    margin: 10px 0;
     text-align: center;
     width: 100%;
 }
@@ -309,10 +333,11 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     font-weight: 300;
 }
 .blue-txt > a {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
+    margin-left: 20px;
     text-decoration: underline;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 .cust-list > li {
     color: #999999;
@@ -334,8 +359,8 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
 .blue-txt {
     color: #333333;
     float: left;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: normal;
     margin: 3px 0 5px;
     width: 100%;
 }
@@ -383,32 +408,36 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     transition: all 0.5s ease 0s;
 }
 .custom-collapse .collapsible-header {
-    background-color: #ffffff;
+    background-color: #f8f9f9;
     border-bottom: 0 none;
     color: #999999;
     cursor: pointer;
     display: block;
-   font-weight: 300;
     font-size: 15px;
+    font-weight: 300;
     line-height: 24px;
     min-height: auto;
-    padding: 0 0 0 15px;
+    padding: 10px 10px 10px 40px;
     position: relative;
+}
+.collapsible-header.active::after {
+    content: "-";
+    font-size: 46px;
+    left:13px;
 }
 .collapsible.custom-collapse, .ask-question {
     margin-top: 20px;
 }
 .submit-btn.btn {
-    background: #1e99d2 none repeat scroll 0 0;
-    border-color: #1e99d2;
+    background: #f04545 none repeat scroll 0 0;
+    border-color: #f04545;
     border-radius: 50px;
     box-shadow: none;
-    float: right;
+    float: left;
     font-size: 16px;
     height: auto;
     line-height: 45px;
     text-transform: none;
-     
 }
 .submit-btn.btn input{padding:0;    font-weight: 300;}
 .view-more.btn i {
@@ -443,24 +472,25 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
  
 }
 .view-more.btn {
-    background: #1e99d2 none repeat scroll 0 0;
-    border-color: #1e99d2;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #e9e9e9;
     border-radius: 50px;
     box-shadow: none;
+    color: #333333;
     font-size: 16px;
+    font-weight: normal;
     height: 46px;
     line-height: 1;
     margin: 10px 0 0;
+    padding: 12px 30px;
     text-transform: none;
     width: auto;
-    font-weight: 300;
-     padding: 13px 30px;
 }
 .sub-title {
-    color: #999999;
+    color: #333333;
     float: left;
-    font-weight: 300;
     font-size: 18px;
+    font-weight: normal;
     margin-bottom: 15px;
     margin-top: 5px;
     text-align: center;
@@ -512,6 +542,7 @@ form .my-text-field {
 }
 .ask-question {
     float: left;
+    padding-left: 70px;
     width: 100%;
 }
 .ask-question > p {
@@ -539,12 +570,12 @@ form .my-text-field {
     font-weight: 300;
 }
 .collapse-content {
-    border: 1px solid #d4d4d4;
+    background: #f8f9f9 none repeat scroll 0 0;
+    border: 0 none;
     border-radius: 5px;
     float: left;
     padding: 15px;
     width: 100%;
-
 }
 .Security-Regulations ul {
     float: left;
@@ -555,9 +586,8 @@ form .my-text-field {
 .custom-collapse .collapsible-body {
     border-bottom: 0 none;
     box-sizing: border-box;
- 
     float: left;
-    padding: 10px 0 10px 20px;
+    padding: 5px 20px 20px 40px;
     width: 100%;
 }
 .custom-collapse .collapsible-body p {
@@ -581,26 +611,26 @@ form .my-text-field {
     width: 100%;
 }
 .Security-Regulations ul li::after {
-    background: #ebebeb none repeat scroll 0 0;
-    border-radius: 50%;
-    content: "";
-    height: 8px;
+ 
+    color: #bebebe;
+    content: "";
+    font-family: fontawesome;
     left: 0;
     position: absolute;
-    top: 8px;
-    width: 8px;
+    top: 0;
 }
 .Security-Regulations h4 {
-    color: #1e99d2;
+    color: #333333;
     float: left;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: normal;
     width: 100%;
-    font-weight: 300;
 }
 .address-area {
     float: left;
-    margin: 30px 0 0;
+   
     width: 100%;
+      height:100%;
 }
 .landin-sec-body {
     float: left;
@@ -619,7 +649,7 @@ form .my-text-field {
     border: 1px solid #e5e5e5 !important;
     box-sizing: border-box;
     color: #333333;
-
+    background: #f8f9f9 none repeat scroll 0 0;
     font-size: 14px;
     height: auto;
     line-height: 1.2;
@@ -668,9 +698,9 @@ form .my-text-field {
     width: 100%;
 }
 .address > label {
-    color: #1e99d2;
+    color: #333;
     float: left;
- font-weight: 300;
+ font-weight: normal;
     font-size: 16px;
     margin-bottom: 10px;
     width: 100%;
@@ -678,7 +708,7 @@ form .my-text-field {
 .address li {
     color: #999999;
     float: left;
-    font-weight: 300
+    font-weight: 300;
     font-size: 14px;
     padding-left: 20px;
     position: relative;
@@ -753,18 +783,18 @@ form .my-text-field {
     cursor: pointer;
 }
 h3.emabssy-name {
-    color: rgba(153, 153, 153, 0.6);
+    color: #333333;
     float: left;
     font-size: 18px;
-    margin: 10px 0;
+    font-weight: normal;
+    margin: 0 0 10px;
     width: 100%;
-    font-weight: 300;
 }
 .Address h4 {
     color: #333333;
     float: left;
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: normal;
+    font-size: 20px;
     margin: 0 0 15px;
     width: 100%;
 }
@@ -870,7 +900,7 @@ sup.info {
     top: 1px;
 }
 .another-pager .btn.active {
-    background: #1e99d2 none repeat scroll 0 0;
+    background: #f04545 none repeat scroll 0 0;
 }
 .tabs.custom-tab .indicator {
     background-color: #f04545;
@@ -879,15 +909,24 @@ sup.info {
     position: absolute;
     will-change: left, right;
     z-index: 5;
+    display: none
 }
-.tabs.custom-tab li a.active{color: #f04545 !important}
+.tabs.custom-tab li a.active {
+
+    background: #f9f9f9 none repeat scroll 0 0;
+    border:1px solid #ededed;
+    color: #333 !important;
+    border-bottom:0px;
+}
 .tabs.custom-tab li a {
-    color: #999999 !important;
+    color: #999 !important;
 font-weight: 300;
-    font-size: 18px !important;
+    font-size: 15px !important;
     text-transform: capitalize !important;
+     border:1px solid transparent;
+     border-bottom:0px;
 }
-.tabs.custom-tab::after {
+/*.tabs.custom-tab::after {
     background: #dddddd none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -896,6 +935,10 @@ font-weight: 300;
     position: absolute;
     right: 0;
     z-index: 0;
+}*/
+.tabs.custom-tab {
+    bottom: -1px;
+    position: relative;
 }
 .another-pager .btn {
     background: #999 none repeat scroll 0 0;
@@ -921,7 +964,7 @@ font-weight: 300;
     resize: none;
 }
 .footer .btn.my-btn {
-    background: #1e99d2 none repeat scroll 0 0;
+    background: #f04545 none repeat scroll 0 0;
     border-radius: 50px;
     box-shadow: none;
     float: right;
@@ -932,8 +975,8 @@ font-weight: 300;
 }
 .footer .input-field:focus{box-shadow: none !important;   border: 1px solid rgba(255, 255, 255, 0.1) !important;}
 .footer .input-field {
-    background: #5c5c5c none repeat scroll 0 0;
-    border: 1px solid #5c5c5c;
+    background: #385a70 none repeat scroll 0 0;
+    border: 1px solid #385a70;
     border-radius: 4px;
     box-shadow: none;
     box-sizing: border-box;
@@ -956,15 +999,14 @@ font-weight: 300;
     width: 100%;
 }
 .copy-rite {
-    border-top: 1px solid #424242;
-    color: #d1d1d1;
+    border-top: 1px solid #1a4058;
+    color: #4f7791;
     float: left;
     font-size: 12px;
-    font-weight: 100;
+    font-weight: normal;
     margin: 30px 0 0;
-
-    padding: 15px 0;
-    text-align: left;
+    padding: 10px 0;
+    text-align: center;
     width: 100%;
 }
 .footer .input-field:focus {
@@ -973,7 +1015,7 @@ font-weight: 300;
     color: #333333;
 }
 footer.footer {
-    background: #333333 none repeat scroll 0 0;
+    background: #06314c none repeat scroll 0 0;
     float: left;
     padding: 0px;
     position: relative;
@@ -981,21 +1023,21 @@ footer.footer {
     z-index: 10;
 }
 .addes-links > li {
-    color: #ffffff;
+    color: #4f7791;
     float: left;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: normal;
     margin-bottom: 10px;
     padding-left: 25px;
     position: relative;
     width: 100%;
 }
 .footer .icons {
-    color: #ffffff;
+    color: #4f7791;
     left: 0;
     position: absolute;
 }
-.addes-links > li > a{color: #ffffff;}
+.addes-links > li > a{color: #4f7791;}
 footer .socials-links li.fb a {    background: #3b5998 none repeat scroll 0 0;}
 footer .socials-links li.twi a {    background: #55acee none repeat scroll 0 0;}
 footer .socials-links li.play a {    background: #f61c0d none repeat scroll 0 0;}
@@ -1034,10 +1076,10 @@ footer .socials-links {
     margin-right: 10px;
 }
 .fot-links a {
-    color: #ffffff;
+    color: #4f7791;
     float: left;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: normal;
 }
 .fot-links > li {
     float: left;
@@ -1059,12 +1101,13 @@ footer .socials-links {
     margin-bottom: 30px;
     margin-top: 0;
     }
-    .step-cont-line {
+.step-cont-line {
     float: left;
-    margin-bottom: 20px;
-    width: 100%;
+    padding-bottom: 30px;
+    padding-left: 85px;
     position: relative;
-    padding-left: 75px;
+    width: 100%;
+    z-index: 10;
 }
 .header.sticky .get-btn.btn{margin-top: 0px; transition: 0.5s;}
 .header.sticky .location-section label{display: none;}
@@ -1085,21 +1128,24 @@ footer .socials-links {
 }
 .tabs.upper-tab .indicator {
     background-color: rgb(240, 69, 69);
-    bottom: -4px;
-    height: 4px;
+    bottom: 0px;
+    height: auto;
     position: absolute;
     will-change: left, right;
+    top:0;
+    display: none;
 }
 .tabs.upper-tab {
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom: 4px solid rgb(116, 115, 115);
-    height: 52px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 0px solid transparent;
+    height: 50px;
     margin: 0 auto;
     overflow: visible;
     position: relative;
     white-space: nowrap;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding-right: 150px;
 }
 .upper-tab.tabs .tab a {
     color: rgb(255, 255, 255);
@@ -1109,17 +1155,22 @@ footer .socials-links {
     height: 100%;
     opacity: 0.7;
     overflow: hidden;
-    padding: 0 24px;
+    padding: 0 20px;
     text-overflow: ellipsis;
     text-transform: none;
     transition: color 0.28s ease 0s;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
-.upper-tab.tabs .tab a.active {
+
+.upper-tab.tabs .tab a.active , .upper-tab.tabs .tab:hover a {
     opacity: 1;
      transition: opacity 0.28s ease 0s;
+     color: #fff;
+     background: #f04545 none repeat scroll 0 0;
 }
-.tabs.upper-tab .indicator::after {
+.item.tab::after {
     border-left: 10px solid rgba(0, 0, 0, 0);
     border-right: 10px solid rgba(0, 0, 0, 0);
     border-top: 10px solid rgb(240, 69, 69);
@@ -1138,20 +1189,19 @@ footer .socials-links {
     margin: 0;
     width: 100%;
     line-height: 1 !important;
-    background: #f8f8f9 none repeat scroll 0 0;
-    border-radius: 4px;
-    padding: 10px;
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-radius: 0px;
+    padding: 10px 20px;
     position: relative;
     vertical-align: middle;
     box-sizing: border-box;
     display: table-cell !important;
     padding-left: 45px !important;
     float: none;
-}
+    border-right: 1px solid #fff}
 .visa-option label > span {
-    float: left;
-    margin-top: 5px;
-    width: 100%;
+  display: block;
+  
 }
 
 .visa-option {
@@ -1160,14 +1210,14 @@ footer .socials-links {
 }
 .tab-content {
     float: left;
-    padding: 30px 60px;
+    padding: 30px 30px;
     width: 100%;
 }
 .visa-option [type="radio"]:not(:checked) + label::before, .visa-option [type="radio"]:not(:checked) + label::after {
-    border: 1px solid #1e99d2;
+    border: 1px solid #bebebe;
 }
 .visa-option [type="radio"] + label::before, .visa-option [type="radio"] + label::after {
-    background: #ffffff none repeat scroll 0 0;
+   
     content: "";
     height: 24px;
     margin: 0px;
@@ -1178,27 +1228,37 @@ footer .socials-links {
   
 }
 .visa-option [type="radio"]:checked + label::after, .visa-option .with-gap[type="radio"]:checked + label::after {
-    background-color: #1e99d2;
-     border: 6px solid #fff;
+    background-color: #f04545;
+    border-color: #f04545;
+    color: #ffffff;
+    content: "done";
+    font-family: "Material Icons";
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+        font-feature-settings: "liga";
 }
 .visa-option [type="radio"]:checked + label {
-    background-color: #1e99d2;
-    box-shadow: 0 0 35px rgba(30, 153, 210, 0.3);
-    color: #ffffff;
+    background-color: #fff;
+/*    box-shadow: 0 0 35px rgba(30, 153, 210, 0.3);*/
+    color: #909090;
 }
 .vis-detail > p {
     color: #999999;
+    float: left;
     font-size: 20px;
     font-weight: 100;
+    margin: 0 0 10px;
     padding: 0 22%;
     text-align: center;
+    width: 100%;
 }
 .vis-detail {
     float: left;
     padding: 60px 0 40px;
     width: 100%;
 }
-.process-steps.compeletd + .process-steps::after {
+/*.process-steps.compeletd + .process-steps::after {
     background: #1e99d2 none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -1207,8 +1267,8 @@ footer .socials-links {
     position: absolute;
     right: 50%;
     top: 0;
-}
-.process-steps.compeletd + .process-steps.step3::after {
+}*/
+/*.process-steps.compeletd + .process-steps.step3::after {
     background: #1e99d2 none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -1217,8 +1277,8 @@ footer .socials-links {
     position: absolute;
     right: 0;
     top: 0;
-}
-.step-cont-line::after {
+}*/
+/*.step-cont-line::after {
     background-color: #ffffff;
     background-image: url("../images/sprite-img.png");
     background-position: 18px center;
@@ -1232,36 +1292,65 @@ footer .socials-links {
     top: -8px;
     width: 60px;
     z-index: 1;
-}
+}*/
+/*.step-cont-line::after {
+    background-color: #ffffff;
+    background-image: url("../images/sprite-img.png");
+    background-position: 14px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+
+    content: "";
+    height: 50px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: 50px;
+    z-index: 1;
+}*/
 .step-cont-line::before {
-    background: #ebebeb none repeat scroll 0 0;
+    background: #eeefef none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 100%;
     left: 30px;
     position: absolute;
-    top: 13px;
-    width: 1px;
+    top: 0px;
+    width: 2px;
 }
-.process-steps.compeletd + .process-steps.compeletd::after {  background: #1e99d2 none repeat scroll 0 0;
+
+/*.step-cont-line::before {
+    background: #f8f9f9 none repeat scroll 0 0;
+    border-radius: 50%;
+    bottom: 0;
+    box-shadow: 8px 3px 8px 2px #e9e9e9;
+    content: "";
+    height: 62px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 62px;
+}*/
+/*.process-steps.compeletd + .process-steps.compeletd::after {  background: #1e99d2 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 1px;
     left: 0;
     position: absolute;
     right: 0;
-    top: 0;}
-.step-cont-line.cover-letter::after {
-    background-position: -28px center;
+    top: 0;}*/
+.step-cont-line.cover-letter .custom-icons::after{
+    background-position: -40px center;
 }
-.step-cont-line.leave-certifictate::after {
-    background-position: -70px center;
+.step-cont-line.leave-certifictate .custom-icons::after{
+    background-position: -94px center;
 }
-.step-cont-line.proof-finance::after {
-    background-position: -110px center;
+.step-cont-line.proof-finance .custom-icons::after {
+    background-position: -144px center;
 }
-.step-cont-line.photo::after {
-    background-position: -150px center;
+.step-cont-line.photo .custom-icons::after{
+    background-position: -195px center;
 }
 .step-cont-line:last-child::before {
     height: 0;
@@ -1275,23 +1364,23 @@ footer .socials-links {
 }
 
 .specail-case {
-    border-top: 1px dashed #ececec;
+    border-top: 0 none;
     float: left;
-    margin-top:30px;
-    padding-top: 15px;
-    width: 100%;
     margin-bottom: 20px;
-    padding-left: 35px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    width: 100%;
 }
 .specail-case > h3 {
-    color: #333333;
+    color: #f04545;
+    cursor: pointer;
     float: left;
     font-size: 20px;
-    font-weight: 300;
-    margin: 15px 0 30px;
+    font-weight: normal;
+    margin: 10px 0 25px;
+    transition: all 0.5s ease 0s;
     width: 100%;
-    cursor: pointer;
-    transition:0.5s;
 }
 .specail-case > h3:hover{color: #1e99d2; transition:0.5s;}
 .specail-case-cont::after {
@@ -1300,7 +1389,7 @@ footer .socials-links {
     left: 0;
     position: absolute;
     top: 0;
-    color: #1e99d2;
+    color: #d1d1d1;
     font-size: 18px;
 }
 .step2-tab-content .specail-case {
@@ -1320,8 +1409,13 @@ footer .socials-links {
     margin-bottom: 0 !important;
 }
 .pv-another-cont {
+    background: #f8f9f9 none repeat scroll 0 0;
+    border: 1px solid #ededed;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
     float: left;
+    padding: 30px 35px;
     width: 100%;
+    position: relative;
 }
 .ask-question .form-group {
     float: left;
@@ -1329,6 +1423,7 @@ footer .socials-links {
 }
  .step-cont-line:last-child {
     margin-bottom: 0;
+    padding-bottom: 0px;
 }
 textarea.my-text-field {
     float: left;
@@ -1343,37 +1438,35 @@ textarea.my-text-field {
     width: 100%;
 }
 
-.get-assistance > span {
 
-    border-radius: 50%;
-    float: left;
-    height: 75px;
-    left: -10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 75px;
-     background: #1e99d2 url("../images/get-assitance.png") no-repeat scroll center center;
-}
 .peocess-content-section {
     float: left;
     position: relative;
     width: 100%;
 }
 .get-assistance {
-    background: #1e99d2 none repeat scroll 0 0;
-    box-shadow: 13px 0 35px rgba(30, 153, 210, 0.28);
+    background: #114d72 none repeat scroll 0 0;
+    box-shadow: none;
     color: #ffffff;
+    float: left;
     font-size: 18px;
     font-weight: 300;
     line-height: 1;
+    margin: 30px 0 0;
+    padding: 30px 50px;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.section-block-body .get-assistance > p {
+    color: #ffffff;
+    float: left;
+    font-size: 30px;
     margin: 0;
-    padding: 15px;
-    position: absolute;
-    right: -60px;
-    top: 30%;
-    padding-left:80px }
-
+    text-align: left;
+    width: auto;
+}
     .form-step > h4 {
     color: #333333;
     float: left;
@@ -1411,7 +1504,8 @@ textarea.my-text-field {
     width: 100%;
 }
 .notes-view-block {
-    border: 1px solid #1e99d2;
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #e8e8e8;
     border-radius: 2px 0 2px 2px;
     float: left;
     height: 200px;
@@ -1428,9 +1522,10 @@ textarea.my-text-field {
     width: 100%;
 }
 .not-link {
-    color: #f04545;
-    font-size: 13px;
-    font-weight: 300;
+    color: #6eb6dc;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
 .form-step ol.mylisting li::after {  counter-increment: step1; content:  counter(step1, decimal) ".)"; position: absolute;left:0; top:0;}
@@ -1483,23 +1578,27 @@ textarea.my-text-field {
     padding-left: 75px;
     position: relative;
     width: 100%;
+    padding-top: 15px;
 }
 .notes-view-block .btn {
-    background: #1e99d2 none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #e8e8e8;
     border-radius: 50px;
     box-shadow: none;
     clear: both;
+    color: #333333;
     display: inline-block;
     float: none;
     height: auto;
     line-height: 40px;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 .form-step > h5 {
-    color: #999999;
+    color: #333333;
     float: left;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: normal;
     margin: 5px 0 10px;
     width: 100%;
 }
@@ -1507,15 +1606,14 @@ textarea.my-text-field {
     float: left;
     width: 100%;
 }
-.step3-process .step2-tab-content {
+/*.step3-process .step2-tab-content {
     padding: 0;
-}
+}*/
 .notes-view-block::before {
-    background: #1e99d2 none repeat scroll 0 0;
-    border-color: #ffffff #ffffff #1e99d2 #1e99d2;
+    background: #e8e8e8 none repeat scroll 0 0;
+    border-color: #e8e8e8 #f9f9f9;
     border-style: solid;
     border-width: 0 16px 16px 0;
-    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);*/
     content: "";
     display: block;
     position: absolute;
@@ -1524,15 +1622,15 @@ textarea.my-text-field {
     width: 0;
 }
 .numbering {
-    background: #ffffff none repeat scroll 0 0;
-    border: 1px solid #ebebeb;
+    background: #f9f9f9 none repeat scroll 0 0;
     border-radius: 50%;
+    box-shadow: 8px 3px 8px 2px #e9e9e9;
     height: 60px;
     left: 0;
-    padding: 14px 0;
+    padding: 0;
     position: absolute;
     text-align: center;
-    top: -17px;
+    top: 0;
     width: 60px;
     z-index: 10;
 }
@@ -1545,11 +1643,24 @@ textarea.my-text-field {
     margin-bottom: 30px;
     width: 100%;
 }
+.tab-part.active {
+    display: block !important;
+}
 .numbering > h6 {
-    color: #1e99d2;
-    font-size: 16px;
-    font-weight: 300;
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ededed;
+    border-radius: 50%;
+    color: #333333;
+    font-size: 22px;
+    font-weight: normal;
+    height: 48px;
+    left: 50%;
     margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
 }
 ol.mylisting  li{list-style: none}
 ol.mylisting {
@@ -2039,7 +2150,303 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
     margin: 30px 0 0;
     width: 100%;
 }
-    .cut-drop { display: none;   background-color: rgba(255, 255, 255, 0.4);    border-radius: 4px;   cursor: pointer; color: #ffffff;    float: left;    font-size: 15px;    font-weight: 300;    padding: 10px 40px 10px 20px;    width: 100%; position: relative;}
+.cut-drop { display: none;   background-color: rgba(255, 255, 255, 0.4);    border-radius: 4px;   cursor: pointer; color: #ffffff;    float: left;    font-size: 15px;    font-weight: 300;    padding: 10px 40px 10px 20px;    width: 100%; position: relative;}
 
+/*****10th june 2017*****/
+.location-section .select-wrapper input.select-dropdown {
+    border: 0 none;
+    color: #666666;
+    font-size: 14px;
+    height: initial;
+    line-height: initial;
+    margin-bottom: 0;
+    min-height: initial;
+}
+.custom-select .dropdown-content li {
+    line-height: initial;
+    min-height: initial;
+     transition:0.5s;
+  
+}
+.custom-select .dropdown-content li > a, .custom-select .dropdown-content li > span {
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    line-height: initial;
+    padding: 10px 15px;
+}
+  .custom-select .dropdown-content.select-dropdown {
+    border-radius: 0 0 4px 4px;
+    box-shadow: none;
+    left: -10px !important;
+    top: 38px !important;
+    width: calc(100% + 20px) !important;
+}
+.select-wrapper.custom-select span.caret {
+    background-image: url("../images/select-arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-size: 0;
+    height: auto;
+    top: 11px;
+    width: 12px;
+}
+.custom-select .dropdown-content li:hover span, .custom-select .dropdown-content li.active span, .custom-select .dropdown-content li.selected span , .custom-select .dropdown-content li:hover a, .custom-select .dropdown-content li.active a, .custom-select .dropdown-content li.selected a{color: #fff}
+.custom-select .dropdown-content li:hover, .custom-select .dropdown-content li.active, .custom-select .dropdown-content li.selected {
+    background-color: #114d72;
+  
 
+}
+.upper-tab.tabs .tab{line-height: 50px; height: 50px}
+.owl-carousel.tabs.owl-theme .owl-item{width: auto !important}
+.custom-pagination {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+.custom-pagination a.btn i{font-size: 36px}
+.custom-pagination a.btn {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ff0000;
+    float: left;
+    height: 50px;
+    margin: 0 1px;
+    padding: 10px 0;
+    width: 55px;
+}
+.tab-cont-bg {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 0 16px rgba(233, 233, 233, 0.9);
+    float: left;
+    width: 100%;
+}
 
+.tab-part .nav.nav-tabs {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.tab-part .nav.nav-tabs li.nav-item {
+    float: left;
+}
+.list-menu-links > ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.list-menu-links {
+    background: #114d72 none repeat scroll 0 0;
+    float: left;
+    height: 48px;
+    padding: 10px 20px 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.list-menu-links.sticky {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.list-menu-links li {
+    display: inline-block;
+}
+.list-menu-links a {
+
+    border-radius: 4px 4px 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 8px 20px;
+    transition: 0.5s;
+}
+.list-menu-links a:hover , .list-menu-links a.active {background: #f6f6f6; color: #114d72 ; transition: 0.5s}
+.section-block .tab-cont-bg {    padding: 40px 30px;}
+.section-block-heading {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+/*.pv-another-cont::after {
+    background: #f2f2f2 none repeat scroll 0 0;
+    bottom: 39px;
+    content: "";
+    height: auto;
+    left: 68px;
+    position: absolute;
+    top: 35px;
+    width: 2px;
+    z-index: 0;
+}*/
+.section-block-body .get-assistance > p {
+    color: #ffffff;
+    float: left;
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+    width: auto;
+}
+.form-group .custom-input {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    max-width: 100%;
+    min-height: 46px;
+    min-width: inherit;
+    padding: 10px 15px;
+    width: 100%;
+}
+.cust-button.waves-effect.wave-light {
+    background: #f04545 none repeat scroll 0 0;
+    border: 1px solid #f04545;
+    border-radius: 5px;
+    height: 46px;
+    width: 100%;
+}
+.assistance-block form .sub-btn {
+    flex: 1 1 0;
+    padding-left: 8px;
+}
+.assistance-block form .form-group {
+    flex: 3 1 0;
+    padding: 0 8px;
+}
+.section-block-body .get-assistance > p {
+    color: #ffffff;
+    float: left;
+    font-size: 30px;
+    margin: 0;
+    padding: 8px 20px 8px 0;
+    text-align: left;
+    width: auto;
+}
+.assistance-block > form {
+    display: flex;
+}
+.tab-content .tab-cont-bg {
+    padding: 0;
+}
+.avg-time {
+    color: #333333;
+    float: left;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+.visa-fee {
+    color: #f04545;
+    display: block;
+    margin-top: 8px;
+}
+#Priority-Visa .section-block-body {
+    text-align: center;
+}
+.pv-another-cont.priority-cont {
+    display: inline-block;
+    float: none;
+    max-width: 775px;
+    text-align: left
+}
+.custom-icons::after {
+    background-color: #ffffff;
+    background-image: url("../images/sprite-img.png");
+    background-position: 14px center;
+    background-repeat: no-repeat;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    content: "";
+    height: 50px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+}
+.custom-icons {
+    background: #f8f9f9 none repeat scroll 0 0;
+    border-radius: 50%;
+       box-shadow: 8px 3px 8px 2px #e9e9e9;
+    float: left;
+    height: 62px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 62px;
+}
+.medical-Certificate.step-cont-line .custom-icons::after {
+    background-image: url("../images/icons1.png");
+    background-position: center center;
+}
+.collapsible-header::after {
+    color: #f04545;
+    content: "+";
+    font-size: 30px;
+    font-weight: 300;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+.collapsible-header.active {
+    background: #ffffff none repeat scroll 0 0;
+    color: #333333;
+}
+.collapsible.custom-collapse > li.active {
+    border: 1px solid #ededed;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+}
+.add-block {
+    border: 1px solid #ebebeb;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.09);
+    float: left;
+    height: calc(100% - 38px);
+    padding: 25px 30px;
+    width: 100%;
+}
+.cust-flex {
+    display: flex;
+    float: left;
+    width: 100%;
+}
+.full-width.flex-block {
+    flex: 1 1 0;
+    margin-top: 30px;
+}
+.address-area p.locate {
+    color: #333333;
+    font-size: 16px;
+    font-weight: normal;
+}
+.step2-tab-content {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #ededed;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.09);
+    float: left;
+    margin-bottom: 30px;
+    padding: 30px 30px 10px;
+    width: 100%;
+}
+.process-steps.compeletd + .process-steps.compeletd::after {
+    background: #02c10f none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: -100%;
+    position: absolute;
+    right: 50%;
+    top: 0;
+}
+.process-steps.compeletd + .process-steps.step3.compeletd::after{right:0}
