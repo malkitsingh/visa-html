@@ -148,6 +148,12 @@
         .error-page > p{font-size: 14px;}
         .error-page h5 {    font-size: 20px;}
         .error-page{padding: 75px 0}
+        header.header.home-header.sticky {
+    background: #ffffff none repeat scroll 0 0;
+    position: fixed;
+}
+        header.header.home-header.sticky .stick , header.header.home-header .unstick {display: block}
+         header.header.home-header.sticky .unstick ,header.header.home-header .stick{display: none}
 }
    @media (max-width: 480px){       
         .form-part .location-section label{display: none} 
