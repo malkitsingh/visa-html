@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Visa Project</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
@@ -18,17 +18,19 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
   </head>
   <body>
+    <header class="header">
+      <div class="logo-part">
+        <a  href="index.html"><img src="images/logo.png" alt="logo" title="logo"/></a>
+      </div>
       <div class="toggle-btn">
         <span class="bar bar1"></span>
         <span class="bar bar2"></span>
         <span class="bar bar3"></span>
       </div>
-    <header class="header">
-      <div class="logo-part">
-        <a  href="index.html"><img src="images/logo.png" alt="logo" title="logo"/></a>
-      </div>
-   
-            <div class="right-nav-part">
+    
+    </header>
+     <div class="banner" id="Visa-Types">
+        <div class="right-nav-part">
         <form>
          <div class="location-section">
         
@@ -57,17 +59,23 @@
           
        </form>
       </div>
-    
-    </header>
-     <div class="banner" >
-   
      </div>
     <section class="content-part">
-    
+     <!--  <aside class="sidebar">
+        <ul class="sidebar-list">
+
+          <li class="active"><a href="#Visa-Types">Visa Types</a></li>
+          <li><a href="#How-To-Apply">How To Apply</a></li>
+          <li><a href="#Priority-Visa">Priority Visa</a></li>
+          <li><a href="#FAQs">FAQs</a></li>
+          <li><a href="#Embassy">Embassy</a></li>
+           <li><a href="#Regulations">Security Regulations</a></li>
+        </ul>
+      </aside> -->
       <div class="main-section">
-        <div class="Visa-Types section-block" id="Visa-Types">
+        <div class="Visa-Types section-block" >
             <div class="tab-area"> 
-         
+              <div class="cut-drop">Select Category</div>
                
             <ul class="tabs upper-tab owl-carousel my-carousel1" id="owl-demo">
               <li class="tab item"><a href="#test1" class="active" data-content="Tourist Visa">Tourist Visa</a></li>
@@ -201,11 +209,10 @@
       </div>
         </div>
         </div>
-              </div>
-   </div>
+   
       <div class="list-menu-links">
         <ul>
-            <li class="hide-mob"><a href="#Visa-Types">Visa Types</a></li>                                      
+                                                 
           <li><a href="#How-To-Apply" class="active">How To Apply</a></li>
           <li><a href="#Priority-Visa">Priority Visa</a></li>
           <li><a href="#FAQs">FAQs</a></li>
@@ -255,7 +262,7 @@
                         <div class="pv-another-cont">
                           <div class="step-cont-line">
                               <span class="custom-icons"></span>
-                           <h5 class="blue-txt">Passport:  <a href="javascript:void(0)" class="sample">Sample</a></h5>
+                           <h5 class="blue-txt">Passport:  <a href="#modal1" >Sample</a></h5>
                             <ul class="cust-list">  
                                <li><span  class="icons-part"><i class="fa fa-angle-right" aria-hidden="true"></i></span>Original Passport valid for at least 6 months issued within the last 10 years with at least two blank pages back to back. Old Passports, if any</li>
                             </ul>
@@ -340,7 +347,7 @@
                        </div>
  
                     </div>
-                    <div class="step2-process ">
+                    <div class="step2-process hide">
                         <div class="row">
                           <div class="col s12 no-padd">
                             <ul class="tabs custom-tab">
@@ -434,7 +441,7 @@
                     </div>
                      </div>
                      </div>
-                    <div class="step3-process  ">
+                    <div class="step3-process hide ">
                          <div class="step2-tab-content">
                             <div class="form-step">
                                <span class="numbering"><h6>1</h6></span>
@@ -565,14 +572,10 @@ temporary resident categories (visitor visas, study and work permits) and travel
             <div class="section-block-body">
                 <div class="row">
                   <div class="cust-flex">
-                    <ul class="tabs my-tab">
-                        <li class="tab"><a href="#Consulate-Address" class="active">Consulate Address</a></li>
-                        <li class="tab"><a href="#Embassy-Address">Embassy Address</a></li>
-         </ul>
-                    <div class="col s12 l6 m6 full-width flex-block" id="Consulate-Address">
+                    <div class="col s12 l6 m6 full-width flex-block">
                      
                        <div class="address-area">
-                         <h4 class="mob-hide"> Consulate Address<sup class="info"><i class="fa fa-info-circle" aria-hidden="true"></i></sup></h4>
+                         <h4>Consulate Address<sup class="info"><i class="fa fa-info-circle" aria-hidden="true"></i></sup></h4>
                          <div class="add-block">
                   <p class="locate">Locate your nearest Italian Consulate</p>
                   <div class="select-box-part">
@@ -621,9 +624,9 @@ temporary resident categories (visitor visas, study and work permits) and travel
                 </div>
                    </div>
                     </div>
-                    <div class="col s12 l6 m6 full-width flex-block" id="Embassy-Address">
+                    <div class="col s12 l6 m6 full-width flex-block">
                               <div class="address-area">
-                         <h4 class="mob-hide">Embassy Address</h4>
+                         <h4>Embassy Address</h4>
                            <div class="add-block">
                
                   <h3 class="emabssy-name">New Delhi</h3>
@@ -674,15 +677,9 @@ temporary resident categories (visitor visas, study and work permits) and travel
             </div>
             <div class="section-block-body">
                 <div class="row">
-                     <ul class="tabs my-tab">
-                        <li class="tab"><a href="#Free-Import">Free Import</a></li>
-                         <li class="tab"><a href="#Restricted">Restricted</a></li>
-                          <li class="tab"><a href="#Prohibited">Prohibited</a></li>
-
-                    </ul>
-                    <div class="col s12 l4 m12" id="Free-Import">
-                        <h4 class="mob-hide">Free Import</h4>
-                        <ul >
+                    <div class="col s12 l4 m12">
+                        <h4>Free Import</h4>
+                        <ul>
                           <li>For Non European Union Nationals (E.U), Alcoholic beverages having 22% alcohol– up to 1 liter or beer up to 16 liters or wine (not sparkling – 4 liters or fortified/ sparkling – 2 liters), per person aged 17 and over is allowed.</li>
                           <li>For Non European Union Nationals (E.U), Tobacco of all types in the following capacity– 200 cigarettes or 100 cigarillos or 50 cigars or loose Tobacco up to 250 grams per person aged 17 and over is allowed.</li>
                           <li>If you are travelling from any country within the European Union National (E.U), you may bring in any meat, dairy or other animal products. You may also bring in any fruit, vegetables or plant products other than plants and seeds of Fraxinus (Ash) intended... 
@@ -693,8 +690,8 @@ for planting as long as they are, grown in an EU Member State, free from pests a
                               <a href="#" class="view-more btn waves-effect wave-light">View more<i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                     <div class="col s12 l4 m12" id="Restricted">
-                        <h4 class="mob-hide">Restricted</h4>
+                     <div class="col s12 l4 m12">
+                        <h4>Restricted</h4>
                         <ul>
                           <li>Satellite phones carried in baggage/ hand baggage without the necessary Department of Telecommunications license shall be confiscated until such a license is provided.</li>
                           <li>All persons carrying valuable goods to U.K. must fill in a declaration with the detailed description of the imported goods and present it to the Customs service at the first point of entry.</li>
@@ -704,9 +701,8 @@ for planting as long as they are, grown in an EU Member State, free from pests a
                               <a href="#" class="view-more btn waves-effect wave-light">View more<i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                   <div class="col s12 l4 m12" id="Prohibited">
-
-                        <h4 class="mob-hide">Prohibited</h4>
+                   <div class="col s12 l4 m12">
+                        <h4>Prohibited</h4>
                         <ul>
                           <li>Children under 18 years of age traveling to the United Kingdom on an ACCOMPANIED visa must be accompanied by the person whose name or passport number is specified in the visa. If the child is accompanied by a different person, then the visa will not be valid.</li>
                           <li>Persons with a dual citizenship must use the same ID/travel/passport document for entering or leaving United Kingdom.</li>
@@ -786,42 +782,24 @@ for planting as long as they are, grown in an EU Member State, free from pests a
        
      
     </footer>
- <div class="img-gallery">
-    <div class="modal-content1">
-<span class="close" id="close"><i class="material-icons">clear</i></span>
+    <div id="modal1" class="modal carousel-modal ">
+    <div class="modal-content">
+   <div class="loader"></div>
+
+<!-- Place somewhere in the <body> of your page -->
 <div id="slider" class="flexslider">
   <ul class="slides">
     <li>
-        <figure><img src="images/pic-min.jpeg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
+        <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
-        <figure><img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
+       <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
-        <figure><img src="images/pic-min.jpeg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
+        <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
-        <figure><img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
-    </li>
-     <li>
-        <figure><img src="images/pic-min.jpeg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
-    </li>
-    <li>
-        <figure><img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
-    </li>
-    <li>
-        <figure><img src="images/pic-min.jpeg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
-    </li>
-    <li>
-        <figure><img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images"></figure>
-        <figcaption><h4>Image Name</h4><p>ekljrewiorhjqwjehwi</p></figcaption>
+       <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <!-- items mirrored twice, total of 12 -->
   </ul>
@@ -832,53 +810,50 @@ for planting as long as they are, grown in an EU Member State, free from pests a
         <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
-        <img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images">
+        <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
        <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
-       <img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images">
+       <img src="images/pic-min.jpeg" alt="photo by Barn Images">
+    </li>
+     <li>
+        <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
         <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
-        <img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images">
+       <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
     <li>
        <img src="images/pic-min.jpeg" alt="photo by Barn Images">
     </li>
-    <li>
-       <img src="https://www.usps.com/assets/images/ship/international/usps_passports_635x358_optimized.jpg" alt="photo by Barn Images">
-    </li>
-    
     <!-- items mirrored twice, total of 12 -->
   </ul>
 </div>
-   
- </div>
+    </div>
+ 
   </div>
-  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.js" type="text/javascript"> </script>
      <script src="owlcarousel//owl.carousel.js"> </script>
+     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>-->
      <script src="js/sticky.js" type="text/javascript"> </script>
     <script src="js/custom.js" type="text/javascript"> </script>
   
     <script type="text/javascript">
- 
+    $(window).load(function(){
+      alert();
+     $('.loader').fadeOut();
+});
    
   $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.sample').click(function(){
-      $('.img-gallery').addClass('open');
-    });
-     $('#close').click(function(){
-      $('.img-gallery').removeClass('open');
-    });
+    $('.modal').modal();
   
   });
   $(document).ready(function(){
@@ -887,7 +862,7 @@ for planting as long as they are, grown in an EU Member State, free from pests a
     controlNav: false,
     animationLoop: false,
     slideshow: false,
-    itemWidth: 150,
+    itemWidth: 210,
     itemMargin: 5,
     asNavFor: '#slider'
   });
@@ -901,22 +876,8 @@ for planting as long as they are, grown in an EU Member State, free from pests a
   });
 });
   $(document).ready(function(){
-      if($(window).width() > 767){
-    $(".list-menu-links").sticky({topSpacing:0});
 
-
-           
-         
-      }
-      else if ($(window).width() < 768){
-        $(".list-menu-links a").click(function() {
-              $('.section-block').removeClass('show');
-              var targetDiv1 = $(this).attr("href");
-              $('.section-block'+targetDiv1).addClass('show');
-              $('body').removeClass('open');
-              $('.toggle-btn').removeClass('open');
-            });
-      }
+    $(".list-menu-links").sticky({topSpacing:50});
   });
 
        $(".list-menu-links li a").click(function() {
@@ -926,7 +887,15 @@ for planting as long as they are, grown in an EU Member State, free from pests a
         }, 1000, 'easeOutExpo');
 
     });
-    
+    if ($(window).width() < 768) {
+        $(".visa-option").click(function() {
+        var targetDiv1 = $(this).attr('data-content');
+        $('html, body').animate({
+            scrollTop: $("#"+targetDiv1).offset().top
+        }, 1000, 'easeOutExpo');
+
+    });
+    }
  
     $(document).ready(function() {
         
@@ -946,173 +915,9 @@ for planting as long as they are, grown in an EU Member State, free from pests a
       $(".prev").click(function(){
         owl.trigger('owl.prev');
       })
-      
 });
 
 
-
-
-!function ($) {
-
-	var WinResizer = (function () {
-		var registered = [];
-		var inited = false;
-		var timer;
-		var resize = function () {
-			clearTimeout(timer);
-			timer = setTimeout(notify, 100);
-		};
-		var notify = function () {
-			for (var i = 0, cnt = registered.length; i < cnt; i++) {
-				registered[i].apply();
-			}
-		};
-		return {
-			register: function (fn) {
-				registered.push(fn);
-				if (inited === false) {
-					$(window).bind('resize', resize);
-					inited = true;
-				}
-			},
-			unregister: function (fn) {
-				var registeredFnIndex = registered.indexOf(fn);
-				if (registeredFnIndex > -1) {
-					registered.splice(registeredFnIndex, 1);
-				}
-			}
-		}
-	}());
-
-	var TabDrop = function (element, options) {
-		this.element = $(element);
-		this.options = options;
-
-		if (options.align === "left")
-			this.dropdown = $('<li class="dropdown hide pull-left tabdrop"><a class="dropdown-button btn" href="#" data-activates="dropdown1">Menu<i class="material-icons">keyboard_arrow_down</i><ul class="dropdown-content" id="dropdown1"></ul></li>');
-		else
-			this.dropdown = $('<li class="dropdown hide pull-right tabdrop"><a class="dropdown-button btn" href="#" data-activates="dropdown1">Menu<i class="material-icons">keyboard_arrow_down</i></a><ul class="dropdown-content" id="dropdown1"></ul></li>');
-
-		this.dropdown.prependTo(this.element);
-		if (this.element.parent().is('.tabs-below')) {
-			this.dropdown.addClass('dropup');
-		}
-
-		var boundLayout = $.proxy(this.layout, this);
-
-		WinResizer.register(boundLayout);
-		this.element.on('shown.bs.tab', function (e) {
-   		boundLayout();
- 		});
-
-		this.teardown = function () {
-			WinResizer.unregister(boundLayout);
-			this.element.off('shown.bs.tab', function (e) {
-				boundLayout();
-			});
-		};
-
-		this.layout();
-	};
-
-	TabDrop.prototype = {
-		constructor: TabDrop,
-
-		layout: function () {
-			var self = this;
-			var collection = [];
-      var isUsingFlexbox = function(el){
-        return el.element.css('display').indexOf('flex') > -1;
-      };
-
-			function setDropdownText(text) {
-				self.dropdown.find('a span.display-tab').html(text);
-			}
-
-			function setDropdownDefaultText(collection) {
-				var text;
-				if (jQuery.isFunction(self.options.text)) {
-					text = self.options.text(collection);
-				} else {
-					text = self.options.text;
-				}
-				setDropdownText(text);
-			}
-
-      // Flexbox support
-      function handleFlexbox(){
-        if (isUsingFlexbox(self)){
-          if (self.element.find('li.tabdrop').hasClass('pull-right')){
-          	self.element.find('li.tabdrop').css({position: 'absolute', right: 0});
-						self.element.css('padding-right', self.element.find('.tabdrop').outerWidth(true));
-          }
-        }  
-      }
-
-			function checkOffsetAndPush(recursion) {
-				self.element.find('> li:not(.tabdrop)')
-					.each(function () {
-						if (this.offsetTop > self.options.offsetTop) {
-							collection.push(this);
-						}
-					});
-
-				if (collection.length > 0) {
-					if (!recursion) {
-						self.dropdown.removeClass('hide');
-						self.dropdown.find('ul').empty();
-					}
-					self.dropdown.find('ul').prepend(collection);
-					
-					if (self.dropdown.find('.active').length == 1) {
-						self.dropdown.addClass('active');
-						setDropdownText(self.dropdown.find('.active > a').html());
-					} else {
-						self.dropdown.removeClass('active');
-						setDropdownDefaultText(collection);
-					}
-          handleFlexbox();
-					collection = [];
-					checkOffsetAndPush(true);
-				} else {
-					if (!recursion) {
-						self.dropdown.addClass('hide');
-					}
-				}
-			}
-    
-			self.element.append(self.dropdown.find('li'));
-			checkOffsetAndPush();
-		}
-	};
-
-	$.fn.tabdrop = function (option) {
-		return this.each(function () {
-			var $this = $(this),
-				data = $this.data('tabdrop'),
-				options = typeof option === 'object' && option;
-			if (!data) {
-				options = $.extend({}, $.fn.tabdrop.defaults, options);
-				data = new TabDrop(this, options);
-				$this.data('tabdrop', data);
-			}
-			if (typeof option == 'string') {
-				data[option]();
-			}
-		})
-	};
-
-	$.fn.tabdrop.defaults = {
-		text: '<i class="fa fa-bars"></i>',
-		offsetTop: 0
-	};
-
-	$.fn.tabdrop.Constructor = TabDrop;
-
-}(window.jQuery);
-
-// init
-this.$('.nav-tabs').tabdrop();
 </script>
 
   </body>

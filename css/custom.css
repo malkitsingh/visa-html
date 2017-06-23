@@ -7,7 +7,7 @@ ul.sidebar-list li {    float: left;    position: relative;    width: 100%;}
 .sidebar-list a {    border-bottom: 1px solid #37a3d2;    color: #ffffff;    float: left;    font-size: 15px;    line-height: 1;    padding: 20px;    width: 100%;     transition: all 0.5s ease 0s;    font-weight: 100}
 /*.banner::after {     bottom: 0;    box-shadow: 0 -50px 25px rgba(0, 0, 0, 0.7) inset;    content: "";    left: 0;    position: absolute;    right: 0;    top: 0;}*/
 .get-btn.btn {    background: #f04545 none repeat scroll 0 0;    border-radius: 4px;    box-shadow: none;    font-size: 18px;    margin-left: 5px;    margin-top: -3px;    min-height: 50px;    min-width: 100px;    text-shadow: none;}
-.banner {    background-image: url("../images/banner.jpg");    background-position: center center;    background-size: cover;    float: left;    height: 360px;    width: 100%;    position: relative;    padding: 10px 20px;}
+.banner {    background-image: url("../images/banner.jpg");    background-position: center center;  margin-top: -65px;  background-size: cover;    float: left;    height: 360px;    width: 100%;    position: relative;    padding: 10px 20px;}
 .main-section {    float: left;    padding-left: 0px;    width: 100%;}
 .location-detector-part {
     background: #ffffff none repeat scroll 0 0;
@@ -18,8 +18,8 @@ ul.sidebar-list li {    float: left;    position: relative;    width: 100%;}
     position: relative;
     width: 100%;
 }
-.header {    background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;    float: left;    height: 65px;    padding: 8px 20px;    position: fixed;    width: 100%;    z-index: 100;    transition:0.5s;}
-.logo-part {    float: left;    margin-top: 10px;    width: 150px;}
+.header {    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;    float: left;    height: 65px;    padding: 8px 20px;    position: relative;    width: 100%;    z-index: 100;    transition:0.5s;}
+.logo-part {    float: left;    margin-top: 6px;    width: 230px;}
 span.glo-icons {    position: absolute;    right: 10px;    top: 10px;}
 .right-nav-part {    float: right;    width: auto;}
 .location-section i {    color: #ffffff;    font-weight: 100;    position: absolute;    right: 13px;}
@@ -49,6 +49,7 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     position: relative;
     width: 100%;
 }
+.section-block .tab-area{float: left; width: 100%;}
 .section-block-heading {
     float: left;
     width: 100%;
@@ -344,10 +345,14 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     float: left;
     font-size: 15px;
     margin-bottom: 5px;
-    padding-left: 15px;
+    padding-left: 0px;
     position: relative;
     width: 100%;
     font-weight: 300;
+}
+.logo-part img {
+    float: left;
+    width: 100%;
 }
 .icons-part {
     font-size: 16px;
@@ -355,6 +360,7 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     line-height: 1;
     position: absolute;
     top: 3px;
+    display: none;
 }
 .blue-txt {
     color: #333333;
@@ -686,6 +692,7 @@ form .my-text-field {
     text-align: center;
     top: 0;
     width: 35px;
+    z-index: 1;
 }
 .select-box-part {
     float: left;
@@ -857,12 +864,18 @@ sup.info {
     top: -11px;
    
 }
+header.sticky .logo-part {
+    display: inline-block;
+    float: left;
+  
+}
 .header.sticky {
-    background: rgba(30, 153, 210, 1) none repeat scroll 0 0;
-    height: 50px;
+    background: #fff none repeat scroll 0 0;
+    height: 45px;
     padding: 5px 20px;
     transition: all 0.5s ease 0s;
     z-index: 999;
+    text-align:center;
 }
 .process-steps.step3 {
     text-align: right;
@@ -1152,9 +1165,9 @@ footer .socials-links {
     display: block;
     font-size: 20px;
     font-weight: 300;
-    height: 100%;
+    height: 50px;
     opacity: 0.7;
-    overflow: hidden;
+    overflow: visible;
     padding: 0 20px;
     text-overflow: ellipsis;
     text-transform: none;
@@ -1170,7 +1183,7 @@ footer .socials-links {
      color: #fff;
      background: #f04545 none repeat scroll 0 0;
 }
-.item.tab::after {
+.upper-tab.tabs .tab a.active::after, .upper-tab.tabs .tab:hover a::after {
     border-left: 10px solid rgba(0, 0, 0, 0);
     border-right: 10px solid rgba(0, 0, 0, 0);
     border-top: 10px solid rgb(240, 69, 69);
@@ -1205,8 +1218,9 @@ footer .socials-links {
 }
 
 .visa-option {
-    display: table;
+    display: table ;
     width: 100%;
+    display: -webkit-inline-block;
 }
 .tab-content {
     float: left;
@@ -2096,25 +2110,28 @@ header.sticky .toggle-btn .bar {
 }
 
 .toggle-btn .bar.bar2 {
-  top: 10px;
+  top: 8px;
   transition: all 0.5s ease-in-out 0s;
 }
 
 .toggle-btn .bar.bar3{
-  top: 20px;
+  top: 16px;
   transition: all 0.5s ease-in-out 0s;
 }
 .toggle-btn {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     cursor: pointer;
+    display: none;
     float: right;
-    height: 35px;
-    margin-top: 5px;
+    height: 25px;
+    margin-top: 1px;
     padding: 0;
-    position: relative;
-transition: all 0.5s ease-in-out 0s;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    transition: all 0.5s ease-in-out 0s;
     width: 30px;
-    display: none
+    z-index: 9999;
 }
 header.main-header{
     transition: all 0.5s ease 0s;}
@@ -2198,7 +2215,7 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
   
 
 }
-.upper-tab.tabs .tab{line-height: 50px; height: 50px}
+.upper-tab.tabs .tab{line-height: 50px; height: 60px}
 .owl-carousel.tabs.owl-theme .owl-item{width: auto !important}
 .custom-pagination {
     position: absolute;
@@ -2223,6 +2240,22 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
     float: left;
     width: 100%;
 }
+.tabdrop .dropdown-button .material-icons {
+    line-height: 1;
+    position: relative;
+    top: 5px;
+}
+.tabdrop .dropdown-content {
+    background: #ffffff none repeat scroll 0 0;
+
+    left: auto !important;
+    min-width: auto;
+    right: 0 !important;
+    top: 65px !important;
+    width: auto !important;
+    overflow-y: auto;
+     max-height: 300px;
+}
 
 .tab-part .nav.nav-tabs {
     float: left;
@@ -2230,9 +2263,11 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
     padding: 0;
     position: relative;
     width: 100%;
+     background: #f1f1f1 none repeat scroll 0 0;
 }
 .tab-part .nav.nav-tabs li.nav-item {
     float: left;
+    display: flex;
 }
 .list-menu-links > ul {
     float: left;
@@ -2450,3 +2485,240 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
     top: 0;
 }
 .process-steps.compeletd + .process-steps.step3.compeletd::after{right:0}
+.sticky-wrapper.is-sticky {
+    z-index: 99;
+}
+/*#custom-owl1 .item > img {
+    float: left;
+    width: 100%;
+}
+
+
+#carousel.flexslider.thumbs {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+}
+.carousel-modal .flexslider {
+    background: #ffffff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    margin: 0;
+    position: relative;
+    padding:0px;
+    }
+    .modal.carousel-modal .modal-content {
+    float: left;
+    min-height: 400px;
+    padding: 0;
+    width: 100%;
+}*/
+.carousel-modal .flex-direction-nav .flex-prev {    left: 0;}
+.carousel-modal .flex-direction-nav .flex-next{right: 0px}
+.loader {
+	position: fixed;
+	
+	width: 100px;
+	height: 100px;
+	z-index: 9999;
+	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249);
+}
+.img-gallery.open{opacity: 1; transition: opacity 0.5s; visibility: visible}
+.img-gallery {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    bottom: 0;
+    float: none;
+    left: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.5s;
+    z-index: 999;
+    visibility: hidden;
+}
+.modal-content1 {
+    display: inline-block;
+    max-width: 800px;
+    position: relative;
+    width: 100%;
+    transform: translateY(-100%); 
+    transition: transform 0.5s
+}
+.img-gallery.open .modal-content1{transform: translateY(100px); transition: transform 0.5s}
+.modal-content1 .flexslider {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    margin: 0 0 5px;
+    position: relative;
+}
+.modal-content1 .flexslider figure {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.modal-content1 figcaption p {
+    color: #ffffff;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+}
+.modal-content1 figcaption h4 {
+    color: #ffffff;
+    float: left;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 0 3px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.modal-content1 .flexslider figcaption {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    float: left;
+    padding: 15px 20px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+}
+.modal-content1 .flexslider .slides > li {
+    position: relative;
+}
+.close:hover {opacity: 1; transition: 0.5s;   transform: rotate(180deg)}
+.close {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 34px;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    opacity: 0.6;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: rotate(0deg)
+}
+.close i {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1;
+}
+.modal-content1  .flex-direction-nav a{opacity: 1; z-index: 1}
+.modal-content1  .flex-direction-nav .flex-prev {
+    left: 10px;
+}
+.flex-direction-nav a::before {
+    color: rgba(255,255,255,0.6);
+    content: "";
+    display: inline-block;
+    font-family: "flexslider-icon";
+    font-size: 30px;
+    text-shadow: none;
+}
+.modal-content1  .flex-direction-nav .flex-next {
+    right: 10px;
+}
+.modal-content1 #carousel.flexslider .slides > li::after {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.modal-content1 #carousel.flexslider .slides > li{cursor: pointer}
+.modal-content1 #carousel.flexslider .slides > li.flex-active-slide::after{background-color: rgba(0, 0, 0, 0);}
+.tabdrop {
+    margin-top: 0;
+    width: auto;
+}
+.dropdown-toggle::after {
+    border-left: 0.3em solid rgba(0, 0, 0, 0);
+    border-right: 0.3em solid rgba(0, 0, 0, 0);
+    border-top: 0.3em solid;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    vertical-align: middle;
+    width: 0;
+}
+.pull-right > .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.nav-tabs .nav-item {
+    float: left;
+    margin-bottom: -1px;
+}
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    color: #373a3c;
+    display: none;
+    float: left;
+    font-size: 1rem;
+    left: 0;
+    list-style: outside none none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+}
+.tabdrop .dropdown-content {background: #f1f1f1 !important}
+.tabdrop .dropdown-button.btn {
+    background: #114d72 none repeat scroll 0 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    float: none;
+    height: 65px;
+    padding: 16px 0;
+    text-transform: capitalize;
+    width: 120px;
+}
+.tabdrop .dropdown-content li{margin: 0px;}
+.nav li:last-child .visa-option > label{border-right:0px}
+.tab-part .nav.nav-tabs .tabdrop li.nav-item:last-child .visa-option > label{border:0px}
+.tab-part .nav.nav-tabs .tabdrop li.nav-item .visa-option > label{
+border-right:0;
+}
+.tab-part .nav.nav-tabs .tabdrop li.nav-item{border-bottom: 1px solid #fff}
+
+.tabs.my-tab {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    float: left;
+    margin-bottom: 30px;
+    margin-left: -10px;
+    overflow: visible;
+    text-align: center;
+    width: calc(100% + 20px);
+}
+.hide-mob{display: none !important}
+.visa-option.safari{display: inline-block}
+.visa-option.safari label{width: 100%}
