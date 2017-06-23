@@ -6,17 +6,18 @@ aside.sidebar {    background: #299ed4 none repeat scroll 0 0;    bottom: 0;    
 ul.sidebar-list li {    float: left;    position: relative;    width: 100%;}
 .sidebar-list a {    border-bottom: 1px solid #37a3d2;    color: #ffffff;    float: left;    font-size: 15px;    line-height: 1;    padding: 20px;    width: 100%;     transition: all 0.5s ease 0s;    font-weight: 100}
 /*.banner::after {     bottom: 0;    box-shadow: 0 -50px 25px rgba(0, 0, 0, 0.7) inset;    content: "";    left: 0;    position: absolute;    right: 0;    top: 0;}*/
-.get-btn.btn {    background: #f04545 none repeat scroll 0 0;    border-radius: 4px;    box-shadow: none;    font-size: 18px;    margin-left: 5px;    margin-top: -3px;    min-height: 50px;    min-width: 100px;    text-shadow: none;}
+.get-btn.btn {    background: #f04545 none repeat scroll 0 0;    border-radius: 4px;    box-shadow: none;    font-size: 18px;    margin-left: 5px;    margin-top: -2px;    min-height: 50px;    min-width: 100px;    text-shadow: none;}
 .banner {    background-image: url("../images/banner.jpg");    background-position: center center;  margin-top: -65px;  background-size: cover;    float: left;    height: 360px;    width: 100%;    position: relative;    padding: 10px 20px;}
 .main-section {    float: left;    padding-left: 0px;    width: 100%;}
 .location-detector-part {
     background: #ffffff none repeat scroll 0 0;
     border-radius: 4px;
     float: left;
-    margin-top: -3px;
+    margin-top: -2px;
     padding: 10px;
     position: relative;
     width: 100%;
+    border:1px solid #d9d9d9;
 }
 .header {    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;    float: left;    height: 65px;    padding: 8px 20px;    position: relative;    width: 100%;    z-index: 100;    transition:0.5s;}
 .logo-part {    float: left;    margin-top: 6px;    width: 230px;}
@@ -1731,6 +1732,7 @@ section.banner-part {
     padding: 100px 0 60px;
     position: relative;
     width: 100%;
+    margin-top: -65px
 }
 section.banner-part::after {
     background-color: rgba(0, 0, 0, 0.6);
@@ -2722,3 +2724,173 @@ border-right:0;
 .hide-mob{display: none !important}
 .visa-option.safari{display: inline-block}
 .visa-option.safari label{width: 100%}
+.select-wrapper {
+
+    position: relative;
+
+}
+.form-part .location-detector-part {
+    margin: 5px 0 0 0 !important;
+    min-height: 48px;
+    padding: 12px 15px;
+
+}
+.form-part .location-section .select-wrapper input.select-dropdown{font-size: 18px}
+.form-part .custom-select .dropdown-content.select-dropdown {
+
+    box-shadow: none;
+    left: -15px !important;
+    top: 33px !important;;
+    width: calc(100% + 30px) !important;;
+}
+/***statics pages****/
+.content-section .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+}
+.content-section {
+    background: #f8f9f9 none repeat scroll 0 0;
+    float: left;
+    width: 100%;
+}
+.static-page {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 0 16px #e9e9e9;
+    float: left;
+    margin: 35px 0;
+    padding: 40px;
+    width: 100%;
+}
+.static-page h1.heading {
+    color: #999999;
+    float: left;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0 0 25px;
+    text-align: center;
+    width: 100%;
+    
+}
+.static-page > p {
+    color: #909090;
+    float: left;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    width: 100%;
+}
+.error-page {
+    float: left;
+    padding: 120px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.custom-list > li {
+    color: #999999;
+    float: left;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 15px;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    padding-left:35px;
+}
+.custom-list > li::after {
+    content: counter(list, decimal) ".";
+    counter-increment: list;
+    font-weight: 300;
+    left: 5px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+}
+.static-page h4 {
+    color: #343434;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-top: 0;
+    width: 100%;
+}
+ol.custom-list {
+    counter-reset: list;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.listing {
+    float: left;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+}
+.static-page + .static-page {
+    margin-top: 0;
+}
+.listing > li {
+    color: #999999;
+    float: left;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding-left: 45px;
+    position: relative;
+    width: 100%;
+    line-height: 26px
+}
+.listing > li::after {
+    content: "";
+    font-family: fontawesome;
+    left: 15px;
+    position: absolute;
+    top: 0;
+}
+
+
+.error-page h1 {
+    color: #999999;
+    float: left;
+    font-size: 200px;
+    font-weight: bold;
+    margin: 0;
+    opacity: 0.2;
+    width: 100%;
+    line-height: 1;
+}
+.error-page h5 {
+    color: #909090;
+    float: left;
+    font-size: 30px;
+    margin: 0 0 10px;
+    width: 100%;
+}
+.error-page > p {
+    color: #333333;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    width: 100%;
+}
+.error-page a.btn.my-btn {
+    background: #f04545 none repeat scroll 0 0;
+    border: 1px solid #f04545;
+    border-radius: 50px;
+    box-shadow: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    min-height: 42px;
+    min-width: 200px;
+    padding: 0 30px;
+    text-transform: none;
+    width: auto;
+    margin-top: 15px;
+}
