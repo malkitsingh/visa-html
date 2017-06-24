@@ -346,7 +346,7 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     float: left;
     font-size: 15px;
     margin-bottom: 5px;
-    padding-left: 0px;
+    padding-left: 15px;
     position: relative;
     width: 100%;
     font-weight: 300;
@@ -361,7 +361,7 @@ button.sub-btn {    background: transparent;    border: 0 none;    color: rgba(1
     line-height: 1;
     position: absolute;
     top: 3px;
-    display: none;
+  
 }
 .blue-txt {
     color: #333333;
@@ -1355,7 +1355,7 @@ footer .socials-links {
     position: absolute;
     right: 0;
     top: 0;}*/
-.step-cont-line.cover-letter .custom-icons::after{
+/*.step-cont-line.cover-letter .custom-icons::after{
     background-position: -40px center;
 }
 .step-cont-line.leave-certifictate .custom-icons::after{
@@ -1366,7 +1366,7 @@ footer .socials-links {
 }
 .step-cont-line.photo .custom-icons::after{
     background-position: -195px center;
-}
+}*/
 .step-cont-line:last-child::before {
     height: 0;
 }
@@ -2400,8 +2400,8 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
 }
 .custom-icons::after {
     background-color: #ffffff;
-    background-image: url("../images/sprite-img.png");
-    background-position: 14px center;
+    /*background-image: url("../images/sprite-img.png");*/
+    /*background-position: 14px center;*/
     background-repeat: no-repeat;
     border: 1px solid #ebebeb;
     border-radius: 50%;
@@ -2424,10 +2424,10 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
     top: 0;
     width: 62px;
 }
-.medical-Certificate.step-cont-line .custom-icons::after {
+/*.medical-Certificate.step-cont-line .custom-icons::after {
     background-image: url("../images/icons1.png");
     background-position: center center;
-}
+}*/
 .collapsible-header::after {
     color: #f04545;
     content: "+";
@@ -2896,3 +2896,15 @@ ol.custom-list {
 }
 header.header.home-header{background: transparent}
 header.header.home-header .stick{display: none}
+.custom-icons .icon {
+    font-size: 28px;
+    left: 0;
+    line-height: 0.6;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #999;
+}

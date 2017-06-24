@@ -29,6 +29,8 @@
         .banner-part-content .form-part{padding: 45px 25px}
         .form-part .get-btn.btn{width: 26%}
     }
+        @media (min-width: 768px){   #Embassy-Address ,#Restricted , #Prohibited {    display: block !important;}}
+ 
     @media (max-width: 767px){
         header .right-nav-part {    display: none;}
         .structre li {    width: 100%;}
@@ -135,8 +137,8 @@
         .tabdrop .dropdown-content{top:50px !important}
         .my-tab .indicator {    display: none;}
         .tabs.my-tab .tab a.active {    border-color: #1e99d2;    color: #1e99d2;}
-        .section-block{display: none}
-        .section-block.show{display: block}
+        /*.section-block{display: none}
+        .section-block.show{display: block}*/
         .full-width.flex-block {    flex: 1 1 0;    margin-top: 0;    padding: 0;    float: left; width:100% !important;}
         .tabs.my-tab .tab a {    border-bottom: 2px solid rgba(0, 0, 0, 0);    color: #999999;    display: inline-block;    font-weight: 300;    opacity: 1;    padding: 0 10px;    text-transform: none;}
         .hide-mob{display: inline-block !important}
@@ -148,12 +150,11 @@
         .error-page > p{font-size: 14px;}
         .error-page h5 {    font-size: 20px;}
         .error-page{padding: 75px 0}
-        header.header.home-header.sticky {
-    background: #ffffff none repeat scroll 0 0;
-    position: fixed;
-}
+        header.header.home-header.sticky {    background: #ffffff none repeat scroll 0 0;    position: fixed;}
         header.header.home-header.sticky .stick , header.header.home-header .unstick {display: block}
          header.header.home-header.sticky .unstick ,header.header.home-header .stick{display: none}
+         .custom-pagination{display: none}
+         .tabs.upper-tab{padding-right: 0px}
 }
    @media (max-width: 480px){       
         .form-part .location-section label{display: none} 
