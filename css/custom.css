@@ -2523,11 +2523,22 @@ ul.tab-block-list li:hover  , ul.tab-block-list li:focus , ul.tab-block-list li.
 .carousel-modal .flex-direction-nav .flex-next{right: 0px}
 .loader {
 	position: fixed;
-	
-	width: 100px;
-	height: 100px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 	z-index: 9999;
-	background: url('http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif?e44397') 50% 50% no-repeat rgb(249,249,249);
+	background: rgba(255,255,255,0.9);
+    text-align: center
+}
+.loader > img{
+    width:200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 .img-gallery.open{opacity: 1; transition: opacity 0.5s; visibility: visible}
 .img-gallery {
@@ -2908,3 +2919,68 @@ header.header.home-header .stick{display: none}
     z-index: 10;
     color: #999;
 }
+.selectize-control.single {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.selectize-control.single.custom-select .selectize-input {
+    background-color: #ffffff;
+    background-image: none;
+    background-repeat: repeat-x;
+    box-shadow: none;
+    padding: 0;
+    border: 0px;
+    float: left;
+
+    width: 100%;
+}
+.selectize-dropdown.custom-select [data-selectable], .selectize-dropdown.custom-select .optgroup-header {
+    padding: 8px 10px;
+}
+.selectize-control.single.custom-select .selectize-input::after {
+    border-color: #808080 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 5px 5px 0;
+    content: " ";
+    display: block;
+    height: 0;
+    margin-top: -3px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 0;
+}
+.selectize-dropdown.single.custom-select {
+    border: 0 none;
+    margin-left: -10px;
+    width: calc(100% + 20px) !important;
+    box-shadow: none
+}
+.selectize-dropdown .active {
+    background-color: #114d72;
+    color: #fff;
+}
+.form-part .location-detector-part.home-select {
+    border: 0 none;
+    border-radius: 0;
+    margin: 0;
+    min-height: auto;
+    padding: 0;
+    background: transparent;
+    text-align: left;
+}
+.form-part .location-detector-part.home-select .selectize-control.single.custom-select .selectize-input {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    min-height: 48px;
+    padding: 14px 15px;
+    position: relative;
+    width: 100%;
+}
+.form-part .location-detector-part.home-select  .selectize-dropdown.single.custom-select {width: 100% !important; margin-left: 0px; margin-top: -2px}
+.form-part .location-detector-part.home-select .selectize-control.single.custom-select .selectize-input::after {right: 15px}

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+      $('select').selectize();
     $('.tab-block-list a').click(function(){
         $('.section-block').removeClass('show');
         var my_txt= $(this).attr("href");
@@ -15,7 +16,7 @@ $(document).ready(function(){
         $('body').toggleClass('open');
     });
    
- $('select').material_select();
+
   $('.specail-case > h3').click(function(){
     $(this).toggleClass('open');
     $('.case-cont').slideToggle();
@@ -27,6 +28,10 @@ $(document).ready(function(){
  });
 
 });
+$(window).load(function(){
+$('.loader').fadeOut();
+});
+
 $(window).scroll(function() {
 if ($(this).scrollTop() > 1){  
     // $('header').addClass("sticky");
