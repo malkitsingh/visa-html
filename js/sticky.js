@@ -33,8 +33,8 @@
       var scrollTop = $window.scrollTop(),
         documentHeight = $document.height(),
         dwh = documentHeight - windowHeight,
+        tabh = jQuery('.tab-content').outerHeight();
         extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
-
       for (var i = 0, l = sticked.length; i < l; i++) {
         var s = sticked[i],
           elementTop = s.stickyWrapper.offset().top,
@@ -60,6 +60,7 @@
         else {
           var newTop = documentHeight - s.stickyElement.outerHeight()
             - s.topSpacing - s.bottomSpacing - scrollTop - extra;
+            console.log(newTop, 'sssssss', s);
           if (newTop < 0) {
             newTop = newTop + s.topSpacing;
           } else {

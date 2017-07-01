@@ -1,12 +1,15 @@
+@media(max-width: 1200px){        .footer-content .row{margin-left: auto; margin-right: auto;}}
 @media(max-width: 1024px){
 
         aside.open.sidebar {    left: 0;    z-index: 100;    transition:left 0.5s;}
         .main-section {    padding-left: 0;    width: 100%;}
         aside.sidebar{left:-175px; transition:left 0.5s; z-index: 100; top:70px;}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
-        .upper-tab.tabs .tab a{font-size: 16px;}
+    .right.full-width + .full-width {    padding-left: 0;}
+            .upper-tab.tabs .tab a{font-size: 16px;}
         .form-part .location-section {    float: left;    padding: 0 10px;    width: 36%;}
         .logo-part {    float: left;    margin-top: 12px;    width: 180px;}
         .cont-step > p {     font-size: 14px;   white-space: normal;    width: 150px;  }
@@ -16,9 +19,9 @@
         .vis-detail > p {    color: #999999;    font-size: 16px;    font-weight: 100;    padding: 0;    text-align: center;}
         .basic-block li label {    font-size: 18px;}
         .add-block {    padding: 25px 20px;    width: 100%;}
-        .footer-content {    float: left;    padding: 50px 20px 0;    width: 100%;}
+        .footer-content {    float: left;    padding: 50px 10px 0;    width: 100%;}
         .section-block {    padding: 10px 10px;}
-        .location-section {    float: left;    padding: 0 5px;    width: 39%;}
+        .location-section {    float: left;    padding: 0 5px;    width: 200px;}
         .main-section {    padding-left: 0;    width: 100%;}
         .form-part .get-btn.btn {    float: left;    height: 48px;    margin-left: 10px;    margin-top: 30px;    width: 25%;}
         .banner-part-content .form-part {    background-color: rgba(0, 0, 0, 0.5);    display: inline-block;    float: none;    margin-top: 30px;    padding: 45px 60px;    position: relative;    width: 95%;}
@@ -113,11 +116,11 @@
         .tabs.upper-tab {    height: 40px;    margin-left: -10px;    width: calc(100% + 20px); padding-right: 100px}
         .custom-pagination {    right: 10px;    top: 0;}
         .banner{margin-top: -45px; height: 220px}
-        .list-menu-links {    bottom: 0;    float: left;    height: auto;    margin-bottom: 0;    margin-right: -200px;    transition: margin 0.5s ease 0s;   padding: 0px 0;    position: fixed;    right: 0;    top: 45px;      width: 200px;    z-index: 999;}
+        .list-menu-links {    bottom: 0;    float: left;    height: auto;    margin-bottom: 0;    margin-right: -200px;    transition: margin 0.5s ease 0s;   padding: 0px 0;    position: fixed;    right: 0;    top: 45px;      width: 200px !important;    z-index: 999;}
         .toggle-btn{display: block}
         body.open .list-menu-links {margin-right: 0px;    transition: margin 0.5s ease 0s; }
         /*body.open {    margin-left: -200px;    transition: margin 0.5s ease 0s;}*/
-        header.header.sticky {    left: 0;    position: fixed;    right: 0;    top: 0;}
+        header.header.sticky {    left: 0;    position: fixed;    right: 0;    top: 0; box-shadow:0 0 10px rgba(0, 0, 0, 0.1)}
         .logo-part {    float: left;    margin-top: 5px;    width: 150px;}
         body{ transition: margin 0.5s ease 0s;}
         .list-menu-links li {    display: inline-block;    float: left;    text-align: left;    width: 100%;}
@@ -167,5 +170,5 @@
         .assistance-block > form {    display: block;}
         .assistance-block form .form-group {    flex: 3 1 0;    float: left;    margin-bottom: 10px;    padding: 0;    width: 100%;}
         .assistance-block form .sub-btn {    float: left;    padding-left: 0;    width: 100%;}
-
+        .my-tab .tabs .tab a{font-size: 12px;}
         }
