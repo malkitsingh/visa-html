@@ -3086,3 +3086,41 @@ a.not-link::before {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
 }
+
+
+
+
+.cust-list > li > ul {
+  padding-left: 2%
+}
+
+.cust-list > li > ul > li {
+  list-style-type: circle;
+}
+
+.cust-list > li > ul > li > ul > li {
+  list-style-type: square;
+}
+
+.cust-list > li > ul > li > ul {
+  padding-left: 2%;
+}
+
+.cust-list > li > ul > li > ul > li > ul > li {
+  list-style-type: circle;
+}
+
+.cust-list > li > ul > li > ul > li > ul {
+  padding-left: 2%;
+}
+
+.vis-detail > ul > li {
+  color: #999999;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0 0 10px;
+  padding: 0 2 0 35%;
+  width: 100%;
+  padding-left: 35%;
+  padding-right: 14%;
+}
